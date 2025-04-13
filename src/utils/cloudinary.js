@@ -1,4 +1,4 @@
-import { v2 as cloudinary} from "cloudinary";
+import { v2 } from "cloudinary";
 import { log } from "console";
 import { response } from "express";
 import fs from "fs";
@@ -6,7 +6,7 @@ import fs from "fs";
 
 
     // Configuration
-    cloudinary.config({ 
+    v2.config({ 
         cloud_name: process.env.CLOUDINARY_CLOUD_NAME, 
         api_key: process.env.CLOUDINARY_API_KEY, 
         api_secret: process.env.CLOUDINARY_API_SECRET // Click 'View API Keys' above to copy your API secret
